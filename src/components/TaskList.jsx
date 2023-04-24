@@ -8,9 +8,9 @@ function TaskList(props) {
       {List.map((data) => {
         return (
           <div className="CardList">
-            <img src="./../src/images/listaTareas.png" alt="lista de tareas" />
+            <img src="./../src/images/listaTareas2.png" alt="lista de tareas" />
             <ShowTaskList
-              key={data.id}
+              // key={data.id}
               actividad={data.actividad}
               fecha={data.fecha}
               hora={data.hora}
@@ -22,16 +22,10 @@ function TaskList(props) {
                 )
               }
             />
-            <img
-              src="./../src/images/delete.png"
-              alt="eliminar tareas"
-              className="icons"
-            />
-            <img
-              src="./../src/images/editTasks.png"
-              alt="Editar tarea"
-              className="icons"
-            />
+            <div className="icons">
+              <img src="./../src/images/editTasks.png" alt="Editar tarea" />
+              <img src="./../src/images/delete.png" alt="eliminar tareas" />
+            </div>
           </div>
         );
       })}

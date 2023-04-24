@@ -13,9 +13,9 @@
   grid-row: auto;
   row-gap: 20px;
   padding: 4%;
-  justify-items: center;
   background-color: beige;
 }
+
 h1 {
   border: 2px solid rgb(197, 64, 250);
   padding: 2%;
@@ -23,13 +23,15 @@ h1 {
 }
 
 img {
-  float: left;
-  height: 130px;
+  height: 120px;
   margin: auto;
 }
+
 .icons {
+  justify-content: center;
+}
+.icons img {
   height: 32px;
-  float: right;
 }
 .CardList {
   border: 1px solid rgb(77, 46, 46);
